@@ -1,0 +1,11 @@
+1. break down the problem into smaller problems
+2. try to build the recurrence relation if needed
+3. draw the recursion tree
+4. about the tree:
+    see the flow of functions, how they are getting in stack
+    identify and focus on left tree calls and right tree calls
+    draw the tree and pointer again and again using pen and paper
+    use a debugger to see the flow
+5. see how the values and what type of values are returned at each step
+6. see where two function call will come out
+7. in the end you will come out of the main function
