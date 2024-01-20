@@ -1,3 +1,5 @@
+package pongGame;
+
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
@@ -41,7 +43,7 @@ class GamePanel extends JPanel implements Runnable {
     Paddle paddle2;
     Ball ball;
     Score score;
-    PowerUp powerUp; // Added PowerUp instance
+    PowerUp powerUp; // Added pongGame.PowerUp instance
 
     GamePanel() {
         newPaddles();

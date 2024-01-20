@@ -1,9 +1,9 @@
-package binarySearch;
+package javaCore.binarySearch;
 
 public class BinarySearchForAscendingArray{
     public static void main(String[] args){
         int[] arr = {1, 2, 4, 5, 8, 10, 12, 65, 67, 98};
-        int target = 1;
+        int target = 98;
         System.out.println(binarySearchForAscendingArray(arr, target));
     }
 
@@ -14,7 +14,7 @@ public class BinarySearchForAscendingArray{
         int count = 0;
         while(start <= end){
             count++;
-            System.out.println("while loop excuted " + count + " times");
+            System.out.println("while loop executed " + count + " times");
             // -> find the middle element
             // -> int mid = (start + end)/2; -> Might be possible that (start + end) exceeds the range of int in Java
             int mid = start + (end - start) / 2; // -> better way to find mid -> (S + E) / 2 = ( (S + S) + (E - S) ) / 2 = S + (E - S) / 2
