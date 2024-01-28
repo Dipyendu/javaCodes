@@ -1,4 +1,4 @@
-package mathsForDSA;
+package mathsForDSA.bitwiseOperators;
 
 public class NthMagicNumber {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package mathsForDSA;
+package mathsForDSA.bitwiseOperators;
 
 public class SingleAppearingNumberInThriceAppearingArray {
     public static void main(String[] args) {
