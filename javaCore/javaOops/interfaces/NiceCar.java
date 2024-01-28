@@ -2,7 +2,7 @@ package interfaces;
 
 public class NiceCar {
     private Engine engine;
-    private Media player = new CDPlayer();
+    private final Media player = new CDPlayer();
 
     public NiceCar() {
         engine = new PowerEngine();

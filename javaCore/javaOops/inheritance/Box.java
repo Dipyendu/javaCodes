@@ -1,7 +1,7 @@
 package inheritance;
 
 public class Box {
-    private double l;
+    private final double l;
     double h;
     double w;
 //    double weight;

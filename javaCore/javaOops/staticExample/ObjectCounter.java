@@ -12,7 +12,7 @@ public class ObjectCounter{
         System.out.println(ObjectCounter.count);
     }
 
-    public static void main(String args[]){
+    public static void main(String[] args){
         //creating objects
         ObjectCounter c1=new ObjectCounter();
         ObjectCounter c2=new ObjectCounter();

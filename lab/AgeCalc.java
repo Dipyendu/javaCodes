@@ -1,8 +1,12 @@
 import java.util.Scanner;
 
 class Age {
-    private int birthYear, birthMonth, birthDay;
-    private int currentYear, currentMonth, currentDay;
+    private final int birthYear;
+    private final int birthMonth;
+    private final int birthDay;
+    private final int currentYear;
+    private final int currentMonth;
+    private final int currentDay;
 
     public Age(int birthYear, int birthMonth, int birthDay, int currentYear, int currentMonth, int currentDay) {
         this.birthYear = birthYear;

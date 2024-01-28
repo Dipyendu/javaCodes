@@ -1,4 +1,4 @@
-package recursion;
+package javaCore.recursion;
 
 public class BinarySearchRecursion {
     public static void main(String[] args) {

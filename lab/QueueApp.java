@@ -1,6 +1,6 @@
 class Queue {
-    private int maxSize;
-    private int[] queueArray;
+    private final int maxSize;
+    private final int[] queueArray;
     private int front;
     private int rear;
     private int currentSize;

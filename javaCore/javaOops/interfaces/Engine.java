@@ -2,7 +2,7 @@ package interfaces;
 
 public interface Engine {
 
-    static final int PRICE = 78000;
+    int PRICE = 78000;
 
     void start();
     void stop();

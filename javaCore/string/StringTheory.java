@@ -20,8 +20,8 @@ public class StringTheory {
 
         System.out.println(a == b);
 
-        String c = new String("Dipyendu");
-        String d = new String("Dipyendu");
+        String c = "Dipyendu";
+        String d = "Dipyendu";
         System.out.println(c == d); // -> == checks if reference variables are pointing to same object and if values
                                     // are same
         System.out.println(c.equals(d)); // -> only checks if values are equal

@@ -18,10 +18,9 @@ public class RightShiftElements {
         shiftedArr[0] = arr[arr.length - 1]; // -> First element of the Right Shifted Array
         // -> sArr[0] = arr[4];
 
-        for (int i = 0; i < arr.length - 1; i++) {
-            shiftedArr[i + 1] = arr[i]; // -> Elements from index 1 to arr.length - 1 for shiftedArray
-            // -> sArr[1] = arr[0]; sArr[2] = arr [1]; sArr[3] = arr [2]; sArr[4] = arr[3]
-        }
+        // -> Elements from index 1 to arr.length - 1 for shiftedArray
+        // -> sArr[1] = arr[0]; sArr[2] = arr [1]; sArr[3] = arr [2]; sArr[4] = arr[3]
+        System.arraycopy(arr, 0, shiftedArr, 1, arr.length - 1);
 
         return shiftedArr;
     }

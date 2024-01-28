@@ -32,7 +32,7 @@ class Tile {
 }
 
 public class CountTiles {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Room room = new Room(7, 8, 9);
         Tile tile = new Tile(5, 5);
 

@@ -22,7 +22,6 @@ public class NumberExampleRecursion {
     public static void print(int number) {
         System.out.println(number);
         if (number == 5) { // -> base condition to stop the recursive call
-            return;
         } else {
             // -> this is called tail recursion
             // -> this is the last function call

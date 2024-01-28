@@ -2,7 +2,7 @@ package string;
 
 public class StringPalindrome {
     public static void main(String[] args) {
-        String string = new String("ab");
+        String string = "ab";
         System.out.println("Answer -> " + checkPalindrome(string));
     }
 

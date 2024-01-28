@@ -19,7 +19,7 @@ class Octal{
         while(n != 0){
             remainder = n % 8;
             n = n / 8;
-            octal = octal + (remainder * i);
+            octal = octal + ((long) remainder * i);
             i = i * 10;
         }
         return octal;

@@ -11,7 +11,7 @@ class Splendor extends Bike{
     }
 }
 public class RunTimePolymorphism{
-    public static void main(String args[]){
+    public static void main(String[] args){
         Bike b = new Splendor(); // upcasting
         b.run();
     }

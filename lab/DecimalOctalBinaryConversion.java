@@ -1,5 +1,5 @@
 class DecimalToOctalConverter {
-    private int decimal;
+    private final int decimal;
 
     public DecimalToOctalConverter(int decimal) {
         this.decimal = decimal;
@@ -17,7 +17,7 @@ class DecimalToOctalConverter {
     }
 }
 class DecimalToBinaryConverter {
-    private int decimal;
+    private final int decimal;
 
     public DecimalToBinaryConverter(int decimal) {
         this.decimal = decimal;

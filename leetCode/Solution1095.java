@@ -74,7 +74,7 @@ public class Solution1095 {
 }
 
 class MountainArrayImpl implements MountainArray {
-    private int[] array;
+    private final int[] array;
 
     public MountainArrayImpl(int[] arr) {
         this.array = arr;
@@ -92,7 +92,7 @@ class MountainArrayImpl implements MountainArray {
 }
 
 interface MountainArray {
-    public int get(int index);
+    int get(int index);
 
-    public int length();
+    int length();
 }
