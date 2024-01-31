@@ -1,4 +1,4 @@
-package recursion;
+package javaCore.recursion.easy;
 
 // -> no base condition = infinite function calls
 // -> stack will be filled again and again
@@ -14,18 +14,16 @@ package recursion;
 
 // -> it helps us in breaking bigger problems into smaller problems
 
-public class NumberExampleRecursion {
+public class Print1ToNUsingRecursion {
     public static void main(String[] args) {
-        print(1);
+        printNumbers(1);
     }
 
-    public static void print(int number) {
-        System.out.println(number);
-        if (number == 5) { // -> base condition to stop the recursive call
-        } else {
-            // -> this is called tail recursion
-            // -> this is the last function call
-            print(number + 1); // -> recursive call
+    public static void printNumbers(int number) {
+        if (number > 5) {
+            return;
         }
+        System.out.println(number);
+        printNumbers(number + 1);
     }
 }
