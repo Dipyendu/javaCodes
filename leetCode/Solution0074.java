@@ -1,24 +1,26 @@
+package leetCode;
+
 public class Solution0074 {
     public static void main(String[] args) {
         int[][] matrix = {
-                { -10, -8 },
-                { -6, -5 },
-                { -2, -2 },
-                { -1, 0 },
-                { 3, 4 },
-                { 7, 7 },
-                { 8, 9 },
-                { 10, 10 },
-                { 11, 11 },
-                { 12, 14 },
-                { 15, 16 },
-                { 17, 19 },
-                { 20, 21 },
-                { 22, 22 },
-                { 25, 27 },
-                { 28, 30 },
-                { 32, 32 },
-                { 35, 36 }
+                {-10, -8},
+                {-6, -5},
+                {-2, -2},
+                {-1, 0},
+                {3, 4},
+                {7, 7},
+                {8, 9},
+                {10, 10},
+                {11, 11},
+                {12, 14},
+                {15, 16},
+                {17, 19},
+                {20, 21},
+                {22, 22},
+                {25, 27},
+                {28, 30},
+                {32, 32},
+                {35, 36}
         };
         int target = 16;
         System.out.println("Answer -> " + searchMatrix(matrix, target));
@@ -80,10 +82,8 @@ public class Solution0074 {
         if (columns == 1) {
             if (target == matrix[rowStart][columnMid]) {
                 found = true;
-                return true;
-            }
-
-            else if (target == matrix[rowStart + 1][columnMid]) {
+                return found;
+            } else if (target == matrix[rowStart + 1][columnMid]) {
                 found = true;
                 return found;
             } else {
@@ -92,7 +92,7 @@ public class Solution0074 {
             }
         }
 
-        // for matrix with multi columns check whether the target is in the mid column
+        // for matrix with multi columns check whether the target is in the mid-column
         // of 2 rows
         if (target == matrix[rowStart][columnMid]) {
             found = true;

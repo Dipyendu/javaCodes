@@ -6,7 +6,7 @@ public class BinarySearchRecursion {
         int target = 0;
         int start = 0;
         int end = arr.length - 1;
-        System.out.println("Answer -> " + binarySearch(arr, target, start, end));
+        System.out.println("Index -> " + binarySearch(arr, target, start, end));
     }
 
     public static int binarySearch(int[] arr, int target, int start, int end) {

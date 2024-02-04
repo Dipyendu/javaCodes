@@ -1,17 +1,20 @@
+package leetCode;
+
 public class Solution1295 {
     public static void main(String[] args) {
-        int[] nums = { 12, 345, 0, -6, 7896 };
-        System.out.println(findNumbers(nums));
+        int[] nums = {12, 345, 1, 6, 7896};
+        System.out.println(findNumbersBruteForce(nums));
         System.out.println(findNumbersByString(nums));
+        System.out.println(findNumbers(nums));
     }
 
-    public static int findNumbers(int[] nums) {
+    public static int findNumbersBruteForce(int[] nums) { // very bad complexity => O(n*k)[k = average number of digits of each element]
         int result = 0;
 
-        for (int index = 0; index < nums.length; index++) {
+        for (int num : nums) {
 
             int numberOfDigits = 0;
-            int temp = nums[index];
+            int temp = num;
             while (temp != 0) {
                 temp /= 10;
                 numberOfDigits++;
@@ -27,12 +30,12 @@ public class Solution1295 {
 
     public static int findNumbersByString(int[] nums) {
         int result = 0;
-        for (int index = 0; index < nums.length; index++) {
+        for (int num : nums) {
             int number;
-            if (nums[index] < 0) {
-                number = -(nums[index]);
+            if (num < 0) {
+                number = -num;
             } else {
-                number = nums[index];
+                number = num;
             }
             String temp = String.valueOf(number);
             if (temp.length() % 2 == 0) {
@@ -40,5 +43,16 @@ public class Solution1295 {
             }
         }
         return result;
+    }
+
+    public static int findNumbers(int[] nums) {
+        int count = 0;
+        for (int number : nums) {
+            int numberOfDigits = (int) Math.log10(number);
+            if ((numberOfDigits & 1) == 1) {
+                count++;
+            }
+        }
+        return count;
     }
 }
