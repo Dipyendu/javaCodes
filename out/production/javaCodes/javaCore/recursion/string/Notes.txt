@@ -1,0 +1,4 @@
+1. Permutation & Combination
+
+    Subset -> Non-Adjacent collection
+    [3, 5, 9] -> [], [3], [5], [3, 5], [9], [3, 9], [5, 9], [3, 5, 9]
