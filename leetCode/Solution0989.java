@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Solution989 {
+public class Solution0989 {
     public static void main(String[] args) {
         int[] num = {1, 2, 0, 0};
         int k = 34;

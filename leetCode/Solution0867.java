@@ -2,7 +2,7 @@ package leetCode;
 
 import java.util.Arrays;
 
-public class Solution867 {
+public class Solution0867 {
     public static void main(String[] args) {
         int[][] arr = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
         System.out.println("Answer -> " + Arrays.deepToString(transpose(arr)));
