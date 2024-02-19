@@ -8,7 +8,7 @@ public class CountingPaths {
         System.out.println(count(matrix, current[0], current[1], target[0], target[1]));
     }
 
-    //    Diagonal is not added
+    //    Diagonal needs to be added
     public static int count(int[][] matrix, int currentRow, int currentColumn, int targetRow, int targetColumn) {
         if (currentRow == targetRow && currentColumn == targetColumn) {
             return 1;
