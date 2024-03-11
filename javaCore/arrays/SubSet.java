@@ -12,7 +12,7 @@ import java.util.List;
 
 public class SubSet {
     public static void main(String[] args) {
-        
+
         int[] set1 = {2, 1, 2};
         List<List<Integer>> ans = subSets(set1);
         for (List<Integer> list : ans) {
@@ -54,7 +54,7 @@ public class SubSet {
             }
             end = outer.size() - 1;
             int n = outer.size();
-            for (int j = start; j < n; i++) {
+            for (int j = start; j < n; j++) {
                 List<Integer> internal = new ArrayList<>(outer.get(i));
                 internal.add(arr[i]);
                 outer.add(internal);

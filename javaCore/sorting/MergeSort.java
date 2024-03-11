@@ -10,7 +10,7 @@ import java.util.Arrays;
 
 public class MergeSort {
     public static void main(String[] args) {
-        int[] arr = {3, 7, 4, 1, 8, 2, 10, 34, 32, 12};
+        int[] arr = {3, 7, 7, 4, 4, 1, 8, 2, 3, 10, 7, 34, 32, 12};
         System.out.println(Arrays.toString(mergeSort(arr)));
     }
 
@@ -35,7 +35,7 @@ public class MergeSort {
         int k = 0;
 
         while (i < left.length && j < right.length) {
-            if (left[i] < right[j]) {
+            if (left[i] <= right[j]) {
                 mix[k] = left[i];
                 i++;
             } else {
