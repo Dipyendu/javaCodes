@@ -7,8 +7,8 @@ public class Solution0001 {
     public static void main(String[] args) {
         int[] nums = {3, 2, 7};
         int target = 6;
-        System.out.println("Brute Force Approach: " + Arrays.toString(twoSumBruteForce(nums, target)));
-        System.out.println("Optimized Approach: " + Arrays.toString(twoSumOptimized(nums, target)));
+        System.out.println("Brute Force Approach:" + Arrays.toString(twoSumBruteForce(nums, target)));
+        System.out.println("Optimized Approach:" + Arrays.toString(twoSumOptimized(nums, target)));
     }
 
     public static int[] twoSumBruteForce(int[] nums, int target) { // very bad complexity -> O(n^2)
